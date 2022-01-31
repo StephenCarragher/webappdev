@@ -1,0 +1,52 @@
+/* sets the form */
+.form {
+    margin-top:  10vh;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    min-height: 100vh;
+    background: #c73e1d;
+    position: relative;
+    width: 400px;
+    min-height: 450px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+/* sets the logo in the form */
+  .logo{
+  display: block;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+
+  }
+/* sets style for the different input boxes */
+  input[type=text], input[type=password], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* sets button in form */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  /* nice effect when hover on button */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  

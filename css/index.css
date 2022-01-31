@@ -1,0 +1,36 @@
+/* sets center div most content is on */
+.cent{
+  height: 100%;
+  background: #c73e1d;
+  position: fixed;
+  left: 15%;
+  width: 70%;
+  padding: 20px 30px;
+ 
+}
+
+ul.games {
+  display: flex;  
+  align-items: stretch; 
+  justify-content: space-between; 
+  list-style-type: none;
+  margin: 0;
+  /* padding: 20px 20px; */
+  overflow: hidden;
+  width: 95%;
+  /* background-color: #F18F01; */
+}
+ul.games li{
+  float: left;
+}
+
+ul.games li img {
+  display: inline-block;
+  width:200px;height: 200px; 
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.desc{
+  text-align:center
+}

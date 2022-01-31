@@ -1,0 +1,55 @@
+<html>
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/NavBar.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="topnav">
+            <li><a href="index.html"><img src="Images/RetroGamesTrans.png" alt="Retro Games"></a></li>
+            <li class="dropdown">
+                <a class="dropbtn" class="navbutton">Mobile Games</a>
+                <div class="dropdown-content">
+                    <a href="snake.html" class="drop">Snake</a>
+                    <a href="jumpman.html" class="drop">Jump Man</a>
+                </div>
+            </li>
+            <li><a href="minesweeper.html" class="navbutton">Minesweeper</a></li>
+            <li><a href="suduko.html" class="navbutton">Suduko</a></li>
+            <li style="float:right"><a href="register.html" class="navbutton">Register</a></li>
+            <li style="float:right"><a href="login.html" class="loginbtn">Login</a></li>
+
+        </ul>
+    </nav>
+
+
+
+    <div class="form">
+        <h1 style="text-align:center">Register</h1>
+        <img class="logo" src="Images/RetroGamesTrans.png" alt="Retro Games">   
+        <form>
+            <label for="username"><b>User name:</b></label><br>
+            <input type="text" placeholder="Enter Username" id="username" name="username" required><br>
+            <label for="snum"><b>User name:</b></label><br>
+            <input type="number" minlength="8" placeholder="Enter Student Number" id="snum" name="snum" required><br>
+            <label for="password"><b>Password:</b></label><br>
+            <input type="password" placeholder="Enter Password" id="password" name="password" required><br>
+            <label for="password1"><b>Confirm Password:</b></label><br>
+            <input type="password" placeholder="Enter Password" id="password1" name="password1" required><br>
+            <button type="submit">Register</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+          </form>
+           
+
+    </div>
+    <footer>
+        <p class="text-center">Copyright &copy; Stephen Carragher</p>
+      </footer>
+</body>
+
+</html>

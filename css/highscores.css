@@ -8,28 +8,68 @@
     
   }
 
-   .gameimg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
 
-  }
-
-  
+  /* standard for all tables */
    td, #customers th {
     border: 1px solid #ddd;
     padding: 8px;
   }
   
-  tr:nth-child(even){background-color: #f2f2f2;}
-  
+
    tr:hover {background-color: #ddd;}
   
    th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #04AA6D;
+    /* background-color: #042baa; */
     color: white;
   }
+
+/* changes the colours in each table */
+  #snake tr:nth-child(even) {
+    background-color: #77B28C;
+}
+
+#snake tr:nth-child(odd) {
+    background-color: #C2C5BB;
+}
+
+#snake th {
+    background-color: #157A6E;
+}
+
+#jumpman th {
+  background-color: #07BEB8;
+}
+#jumpman tr:nth-child(even) {
+  background-color: #98DFEA;
+}
+
+#jumpman tr:nth-child(odd) {
+  background-color: #EFD9CE;
+}
+
+#minesweeper th {
+  background-color: #4F6D7A;
+}
+#minesweeper tr:nth-child(even) {
+  background-color: #C0D6DF;
+}
+
+#minesweeper tr:nth-child(odd) {
+  background-color: #E8DAB2;
+}
+
+#suduko th {
+  background-color: #3A2618;
+}
+#suduko tr:nth-child(even) {
+  background-color: #37423D;
+}
+
+#suduko tr:nth-child(odd) {
+  background-color: #9A8873;
+}
+
+

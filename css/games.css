@@ -1,3 +1,4 @@
+/* all game pages standard */
 .cent{
     
     background: #c73e1d;
@@ -7,8 +8,7 @@
     padding: 20px 30px;
     
   }
-
-   .gameimg {
+.gameimg {
     display: block;
     margin-left: auto;
     margin-right: auto;

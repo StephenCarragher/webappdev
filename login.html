@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/NavBar.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="shortcut icon" type="image/png" href="Images/favicon.png"/>
 </head>
 
 <body>
@@ -30,17 +31,18 @@
     <div class="form">
         <h1 style="text-align:center">Login</h1>
         <img class="logo" src="Images/RetroGamesTrans.png" alt="Retro Games">
-        <form action="highscore.html">
+        <!-- <form action="highscore.html"> -->
             <label for="username"><b>User name:</b></label><br>
             <input type="text" placeholder="Enter Username" id="username" name="username" required><br>
             <label for="password"><b>Password:</b></label><br>
             <input type="password" placeholder="Enter Password" id="password" name="password" required><br>
-            <a href="highscore.html"><button type="submit">Login</button></a>
+            <button type="submit" onclick="login()">Login</button>
+            
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
 
-        </form>
+        <!-- </form> -->
 
 
 
@@ -48,6 +50,7 @@
     <footer>
         <p class="text-center">Copyright &copy; Stephen Carragher</p>
       </footer>
+      <script src="JavaScript/LoginForm.js"></script>
 </body>
 
 </html>

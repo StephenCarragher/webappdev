@@ -1,0 +1,83 @@
+#menubarbtn{
+background-color: #F18F01;
+width: 45px;
+height: 45px;
+border: none;
+cursor: pointer;
+}
+
+#menubarimg{
+    /* margin-left: 5px; */
+   float: left;
+    width: 30px;
+    height: 30px;
+}
+
+#MenuList{
+    display: none;
+    /* margin-top: 5px; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 0px;
+    overflow: hidden;
+    background-color: #F18F01;
+
+
+}
+.dropdown-container {
+    display: none;
+    background-color: #c73e1d;
+    padding-left: 8px;
+  }
+#MenuList li{
+    display: block;
+    color: #3B1F2B;
+    text-align: center;
+    padding: 0px 0px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.menuloginbtn {
+    border-radius: 30px;    
+    background-color: #a23b72;
+    padding: 6px 8px 6px 16px;
+    
+    color: #3B1F2B;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    border: none;
+    width:50%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    }
+
+.fa-caret-down {
+    float: right;
+    padding-left: -5px;
+    padding-right: 20px;
+    
+  }
+  .dropdown-btn:hover, .menubutton:hover{
+    background-color: #c55538;
+    color: rgb(255, 255, 255);
+
+  }
+
+.dropdown-btn, .menubutton{
+    padding: 6px 8px 6px 16px;
+    
+    color: #3B1F2B;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}

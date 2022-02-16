@@ -8,7 +8,7 @@
   padding: 20px 30px;
  
 }
-
+/* sets the list of images that link to games */
 ul.games {
   display: flex;  
   align-items: stretch; 
@@ -34,3 +34,4 @@ ul.games li img {
 .desc{
   text-align:center
 }
+

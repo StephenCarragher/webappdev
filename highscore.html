@@ -2,9 +2,13 @@
 
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/NavBar.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/highscores.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="css/MenuBar.css">
+    <link rel="shortcut icon" type="image/png" href="Images/favicon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <body>
     <nav>
@@ -19,15 +23,53 @@
             </li>
             <li><a href="minesweeper.html" class="navbutton">Minesweeper</a></li>
             <li><a href="suduko.html" class="navbutton">Suduko</a></li>
-            <li style="float:right"><a href="register.html" class="navbutton">Register</a></li>
-            <li style="float:right"><a href="login.html" class="loginbtn">Login</a></li>
+            <li style="float:right" ><a id="registerbutton" href="register.html" class="navbutton">Register</a></li>
+            <li style="float:right"><a id="loginbutton" href="login.html" class="loginbtn">Login</a></li>
 
         </ul>
     </nav>
+    <div style="display: inline-block;">
+        <button id="menubarbtn" onclick='showmenu();'><img id="menubarimg" src="Images/menuicon.png"
+                alt="Retro Games"></button>
+        <ul id='MenuList'>
+            <li class="dropdown">
+                <a class="dropdown-btn" class="menubutton">Mobile Games <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-container">
+                    <a href="snake.html" class="menubutton">Snake</a>
+                    <a href="jumpman.html" class="menubutton">Jump Man</a>
+                </div>
+            </li>
+            <li><a href="minesweeper.html" class="menubutton">Minesweeper</a></li>
+            <li><a href="suduko.html" class="menubutton">Suduko</a></li>
+            <li id="loginbutton1"><a href="login.html" class="menuloginbtn">Login</a></li>
+            <li id="registerbutton1"><a href="register.html" class="menubutton">Register</a></li>
 
-    <div class="cent">
+        </ul>
+    </div>
+    <div class="cent" style="display: inline-block;">
         <h1 style="text-align:center">Highscores</h1>
 
+        <h2>User Info</h2>
+        <table id="snake" style="width: 100%">
+        
+            <tr>
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>User Name</td>
+                <td id="username"></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td id="name"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td id="password"></td>
+            </tr>
+          
+        </table>
         <h2>Snake</h2>
         <table id="snake" style="width: 100%">
             <colgroup>
@@ -338,6 +380,8 @@
     <footer>
         <p class="text-center">Copyright &copy; Stephen Carragher</p>
       </footer>
+      <script src="JavaScript/MenuBar.js"></script>
+      <script src="JavaScript/highscores.js"></script>
 </body>
 
 </html>

@@ -2,8 +2,12 @@
 
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/NavBar.css">
-    <link rel="stylesheet" type="text/css" href="css/games.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/MenuBar.css">
+    <link rel="shortcut icon" type="image/png" href="Images/favicon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -19,15 +23,31 @@
             </li>
             <li><a href="minesweeper.html" class="navbutton">Minesweeper</a></li>
             <li><a href="suduko.html" class="navbutton">Suduko</a></li>
-            <li style="float:right"><a href="register.html" class="navbutton">Register</a></li>
-            <li style="float:right"><a href="login.html" class="loginbtn">Login</a></li>
+            <li style="float:right" ><a id="registerbutton" href="register.html" class="navbutton">Register</a></li>
+            <li style="float:right"><a id="loginbutton" href="login.html" class="loginbtn">Login</a></li>
 
         </ul>
     </nav>
 
+    <div style="display: inline-block;">
+        <button id="menubarbtn" onclick='showmenu();'><img id="menubarimg" src="Images/menuicon.png"
+                alt="Retro Games"></button>
+        <ul id='MenuList'>
+            <li class="dropdown">
+                <a class="dropdown-btn" class="menubutton">Mobile Games <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-container">
+                    <a href="snake.html" class="menubutton">Snake</a>
+                    <a href="jumpman.html" class="menubutton">Jump Man</a>
+                </div>
+            </li>
+            <li><a href="minesweeper.html" class="menubutton">Minesweeper</a></li>
+            <li><a href="suduko.html" class="menubutton">Suduko</a></li>
+            <li id="loginbutton1"><a href="login.html" class="menuloginbtn">Login</a></li>
+            <li id="registerbutton1"><a href="register.html" class="menubutton">Register</a></li>
 
-
-    <div class="cent">
+        </ul>
+    </div>
+    <div class="cent" style="display: inline-block;">
         <h1 style="text-align:center">Minesweeper</h1>
         <img class="gameimg" style="height: 500px; width: 550px;" src="Images/minegif.gif" alt="Retro Games">
         <h2><u>How to play.</u> </h2>
@@ -50,6 +70,7 @@
     <footer>
         <p class="text-center">Copyright &copy; Stephen Carragher</p>
       </footer>
+      <script src="JavaScript/MenuBar.js"></script>
 </body>
 
 </html>

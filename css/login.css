@@ -7,7 +7,7 @@
     min-height: 100vh;
     background: #c73e1d;
     position: relative;
-    width: 400px;
+    width: 500px;
     min-height: 450px;
     padding: 20px 30px;
     border-radius: 20px;
@@ -19,13 +19,14 @@
 /* sets the logo in the form */
   .logo{
   display: block;
-  height: 100px;
+  height: 150px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 
   }
 /* sets style for the different input boxes */
-  input[type=text], input[type=password], input[type=number] {
+  input[type=text], input[type=password], input[type=number], input[type=date]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -49,4 +50,12 @@
     opacity: 0.8;
   }
   
+  #warning{
+    display: none;
+    color: rgb(70, 7, 7);
+    text-align: left;
+    font-size: small;
+    margin-top: -5px;
+
+  }
   
